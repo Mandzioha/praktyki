@@ -3,13 +3,8 @@
 let text_container = document.querySelector("h1");
 let button = document.querySelector("#welcome-button");
 let text = text_container.innerHTML;
-let clicked;
+let clicked = 0;
 button.addEventListener("click", ()=>{
-    if(clicked == true){
-        text_container.innerHTML = text;
-        clicked = false;
-    }else{
-        text_container.innerHTML ="Będzie pan zadowolony ;)";
-        clicked = true;  
-    }
+    clicked%2 === 0 ? text_container.innerHTML ="Będzie pan zadowolony ;)" : text_container.innerHTML = text;
+    clicked++;
 });
