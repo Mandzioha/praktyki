@@ -78,6 +78,7 @@ header h1 {
   padding: 10px;
   z-index: 1;
   flex-basis: 20%;
+  transition-duration: 3s;
 }
 @media all and (min-width: 700px) {
   header h1 {
