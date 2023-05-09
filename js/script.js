@@ -1,5 +1,6 @@
 'use strict';
 
+// TEST
 let text_container = document.querySelector("h1");
 let button = document.querySelector("#welcome-button");
 let text = text_container.innerHTML;
